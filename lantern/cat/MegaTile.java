@@ -65,7 +65,7 @@ public class MegaTile {
     public Tile getLocalTile(int x, int y) throws ArrayIndexOutOfBoundsException {
         if ((x < this.sizeX) && (y < this.sizeY))
             return this.tiles[y][x];
-        throw new ArrayIndexOutOfBoundsException("lantern.cat.Tile index is out of bound.");
+        throw new ArrayIndexOutOfBoundsException("lantern.lantern.cat.Tile index is out of bound.");
     }
 
     public Tile getGlobalTile(int globalX, int globalY) {
@@ -79,7 +79,7 @@ public class MegaTile {
         if ((x < this.sizeX) && (y < this.sizeY)) {
             this.tiles[y][x] = tile;
         } else {
-            throw new ArrayIndexOutOfBoundsException("lantern.cat.Tile index is out of bound.");
+            throw new ArrayIndexOutOfBoundsException("lantern.lantern.cat.Tile index is out of bound.");
         }
     }
 
